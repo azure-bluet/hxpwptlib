@@ -10,11 +10,10 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.enchantment.Enchantment;
-import net.minecraftforge.common.crafting.ingredients.AbstractIngredient;
 import net.minecraftforge.common.crafting.ingredients.IIngredientSerializer;
 import net.minecraftforge.registries.ForgeRegistries;
 
-public class EnchantedIngredient extends AbstractIngredient {
+public class EnchantedIngredient extends MoreAbstractIngredient {
     private final Item default_item;
     private final boolean determined_item;
     private final String tags_on; // Enchantments for normal items and StoredEnchantments for enchanted books

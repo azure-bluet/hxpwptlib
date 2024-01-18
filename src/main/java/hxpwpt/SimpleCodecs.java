@@ -13,5 +13,5 @@ public abstract class SimpleCodecs {
             ForgeRegistries.ITEMS.getCodec () .fieldOf ("result") .forGetter (ItemStack::getItem),
             Codec.INT.fieldOf ("count") .forGetter (ItemStack::getCount)
         ) .apply (instance, (item, cnt) -> new ItemStack (item, cnt.intValue ()))
-    ); 
+    );
 }
